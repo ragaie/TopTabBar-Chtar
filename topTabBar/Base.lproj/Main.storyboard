@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barHight">
                                         <real key="value" value="44"/>
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13753" y="-2796"/>
+            <point key="canvasLocation" x="-13956" y="-2846"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="a8z-eC-akm">
