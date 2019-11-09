@@ -18,6 +18,8 @@
 		81BB8C321F559FC1001F53B3 /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C311F559FC1001F53B3 /* Location.png */; };
 		81BB8C351F55A5BA001F53B3 /* house-h.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C331F55A5BA001F53B3 /* house-h.png */; };
 		81BB8C361F55A5BA001F53B3 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C341F55A5BA001F53B3 /* house.png */; };
+		DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */; };
+		DF1E0E792371D078008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */; };
 		DFFAEB862338C6AC00D0EA08 /* TopTabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		81BB8C311F559FC1001F53B3 /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
 		81BB8C331F55A5BA001F53B3 /* house-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-h.png"; sourceTree = "<group>"; };
 		81BB8C341F55A5BA001F53B3 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png"; sourceTree = "<group>"; };
+		DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-11-05 at 5.44.21 PM.png"; sourceTree = "<group>"; };
 		DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +56,11 @@
 		819560BC1F56C0A1005B59C3 /* screen shot */ = {
 			isa = PBXGroup;
 			children = (
+				DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */,
+				DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */,
+				81BB8C331F55A5BA001F53B3 /* house-h.png */,
+				81BB8C341F55A5BA001F53B3 /* house.png */,
+				81BB8C311F559FC1001F53B3 /* Location.png */,
 				819560C31F56C0BD005B59C3 /* Screen Shot 2017-08-30 at 11.43.25 AM.png */,
 			);
 			name = "screen shot";
@@ -61,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				819560BC1F56C0A1005B59C3 /* screen shot */,
-				81BB8C271F559EB0001F53B3 /* view controller */,
 				819702E61F5318BC005927D9 /* TopBar */,
 				819702D31F5318B1005927D9 /* topTabBar */,
 				819702D21F5318B1005927D9 /* Products */,
@@ -99,16 +107,6 @@
 			name = TopBar;
 			sourceTree = "<group>";
 		};
-		81BB8C271F559EB0001F53B3 /* view controller */ = {
-			isa = PBXGroup;
-			children = (
-				81BB8C331F55A5BA001F53B3 /* house-h.png */,
-				81BB8C341F55A5BA001F53B3 /* house.png */,
-				81BB8C311F559FC1001F53B3 /* Location.png */,
-			);
-			name = "view controller";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,7 +140,7 @@
 					819702D01F5318B1005927D9 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YG9FTG932R;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -173,11 +171,13 @@
 			files = (
 				819702DF1F5318B1005927D9 /* LaunchScreen.storyboard in Resources */,
 				819702E81F5318EE005927D9 /* TopTabBar.xib in Resources */,
+				DF1E0E792371D078008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png in Resources */,
 				819702DC1F5318B1005927D9 /* Assets.xcassets in Resources */,
 				81BB8C321F559FC1001F53B3 /* Location.png in Resources */,
 				81BB8C361F55A5BA001F53B3 /* house.png in Resources */,
 				81BB8C351F55A5BA001F53B3 /* house-h.png in Resources */,
 				819560CB1F56C0BD005B59C3 /* Screen Shot 2017-08-30 at 11.43.25 AM.png in Resources */,
+				DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */,
 				819702DA1F5318B1005927D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,8 +320,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chtar.topTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -334,8 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chtar.topTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
