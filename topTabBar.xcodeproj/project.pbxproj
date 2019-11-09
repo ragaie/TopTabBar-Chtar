@@ -20,6 +20,7 @@
 		81BB8C361F55A5BA001F53B3 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C341F55A5BA001F53B3 /* house.png */; };
 		DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */; };
 		DF1E0E792371D078008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */; };
+		DF649FE62376D386008EF633 /* TopTabBar-Chtar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DF649FE52376D386008EF633 /* TopTabBar-Chtar.podspec */; };
 		DFFAEB862338C6AC00D0EA08 /* TopTabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		81BB8C341F55A5BA001F53B3 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png"; sourceTree = "<group>"; };
 		DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-11-05 at 5.44.21 PM.png"; sourceTree = "<group>"; };
+		DF649FE52376D386008EF633 /* TopTabBar-Chtar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TopTabBar-Chtar.podspec"; sourceTree = "<group>"; };
 		DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 		819702C81F5318B1005927D9 = {
 			isa = PBXGroup;
 			children = (
+				DF649FE52376D386008EF633 /* TopTabBar-Chtar.podspec */,
 				819560BC1F56C0A1005B59C3 /* screen shot */,
 				819702E61F5318BC005927D9 /* TopBar */,
 				819702D31F5318B1005927D9 /* topTabBar */,
@@ -177,6 +180,7 @@
 				81BB8C361F55A5BA001F53B3 /* house.png in Resources */,
 				81BB8C351F55A5BA001F53B3 /* house-h.png in Resources */,
 				819560CB1F56C0BD005B59C3 /* Screen Shot 2017-08-30 at 11.43.25 AM.png in Resources */,
+				DF649FE62376D386008EF633 /* TopTabBar-Chtar.podspec in Resources */,
 				DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */,
 				819702DA1F5318B1005927D9 /* Main.storyboard in Resources */,
 			);
