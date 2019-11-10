@@ -109,6 +109,6 @@ this delegate contain :
 
 * **Ragaie alfy Fahmey**  - [ragaie](https://github.com/ragaie)
 
-## You can find me in linked in 
+## You can find me in linkedIn 
 - [Ragaie alfy](www.linkedin.com/in/ragaie-alfy)
 
