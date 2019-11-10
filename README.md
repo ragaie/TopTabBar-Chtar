@@ -1,13 +1,11 @@
 # TopTabBar-Chtar
-TopTabBar for iOS by swift 3, Xcode version 8.2
+Build with native Swift for target iphone and ipad.
 
-easy to reuse it and modify it.
-
-i Would be like this at end 
- ![alt tag](https://github.com/ragaie/TopTabBar-Chtar/blob/master/Simulator%20Screen%20Shot%20Aug%2030%2C%202017%2C%2011.44.31%20AM.png)
- ![alt tag](https://github.com/ragaie/TopTabBar-Chtar/blob/master/Simulator%20Screen%20Shot%20Aug%2030%2C%202017%2C%2011.44.34%20AM.png)
+# result from one live project using it:-
+not this result only you can get from library, but you have full access to modify every parameter in component.
+ ![alt tag](https://github.com/ragaie/TopTabBar-Chtar/blob/master/IMG_3325.jpg)
  
- ## HEre hoe can reuse it, in your project
+ ## How can you use it:-
  
  1- Copy TopTabBar (TopTabBar.swift  , TopTabBar.xib) to your project.
  2- Drag UIView in storyBoard viewController 
