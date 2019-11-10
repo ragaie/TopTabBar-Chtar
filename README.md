@@ -1,16 +1,36 @@
 # TopTabBar-Chtar
-Build with native Swift for target iphone and ipad.
+Build with native Swift targeting iphone and ipad, main functionality to make developer develop like native ios tab bar.
+But. can put it any where of design, im talking about just bar not all tabBar controller.
 
 # result from one live project using it:-
 not this result only you can get from library, but you have full access to modify every parameter in component.
  ![alt tag](https://github.com/ragaie/TopTabBar-Chtar/blob/master/IMG_3325.jpg)
  
- ## How can you use it:-
- 
- 1- Copy TopTabBar (TopTabBar.swift  , TopTabBar.xib) to your project.
- 2- Drag UIView in storyBoard viewController 
- 3- Set class for this customView with ((TopTabBar))
- 
+ ###Getting Started
+
+ ##  Installing
+ Add blow for your pod file 
+   ```
+   pod 'TopTabBar-Chtar' 
+   run pod update
+   ```
+
+```
+import TopTabBar-Chtar
+```
+
+1- add custom view in your storyBoard -->. TopTabBar
+2- leave project build and update view 
+3- then you will get screen like this
+
+![](https://github.com/ragaie/TopTabBar-Chtar/blob/master/Screen%20Shot3.png)
+
+# below what is every parameter in which change
+
+ # App interface like this photo after runing:-
+Application interface          |      final car look like 
+:-------------------------:|:-------------------------: 
+![](https://github.com/ragaie/Ardunio-iOS/blob/master/TestPeripheral/screen%20shot%20/Simulator%20Screen%20Shot%20-%20iPhone%20Xʀ%20-%202019-11-02%20at%2021.44.01.png)  |![]( https://github.com/ragaie/Ardunio-iOS/blob/master/TestPeripheral/screen%20shot/IMG_2551.jpg)
  ![alt tag]( https://github.com/ragaie/TopTabBar-Chtar/blob/master/Screen%20Shot%202017-08-30%20at%2011.43.25%20AM.png)
 
  4- change custom parameter in view as you like that apper in view 
