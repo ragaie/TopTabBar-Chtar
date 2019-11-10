@@ -8,23 +8,22 @@
 
 import UIKit
 
-@IBDesignable class TopTabBar: UIView {
-    
-    
-    private var containerView: UIView!
+@IBDesignable open class TopTabBar: UIView {
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var stackViewContainer: UIStackView!
+    @IBOutlet open weak var stackViewContainer: UIStackView!
     @IBOutlet weak var linebar: UILabel!
     
-    var delegte : TopTabBarDelegate?
-    
     private var lineIndecator : UILabel!
-    // private var ContainerView : UIView!
     private var tabButtons : [UIButton]! = []
     private var selectIndex : Int! = 0
-    public var buttonTitle : [String]! = []
-    public var buttonImges : [UIImage]! = []
-    public var buttonImgesHighLight : [UIImage]! = []
+    open var buttonTitle : [String]! = []
+    open var buttonImges : [UIImage]! = []
+    open var buttonImgesHighLight : [UIImage]! = []
+    
+    open  var delegte : TopTabBarDelegate?
+    open var font : UIFont = UIFont.systemFont(ofSize: 12)
+
+
     //MARK: Initializers
     //MARK: tabbar parameter
     @IBInspectable var buttonNumber : Int = 0 {
@@ -36,7 +35,6 @@ import UIKit
         }
         
     }
-    var font : UIFont = UIFont.systemFont(ofSize: 12)
     
     @IBInspectable var barBackgroundColor : UIColor = UIColor.blue {
         didSet{
@@ -108,14 +106,12 @@ import UIKit
         
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         addLineBar()
         setButtons()
         //wait until button renders in screen to get same width of it and display it.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            // do stuff 42 seconds later
-            
             if self.tabButtons.count > 0{
                 self.setupButtonIndicator(sender: self.tabButtons[0])
             }
@@ -169,15 +165,11 @@ import UIKit
         if tabButtons.count > 0 {
             if buttonTitle.count > 0 {
                 for item in tabButtons {
-                    
                     item.setTitleColor(textColor, for: .normal)
                     item.backgroundColor = .clear
                 }
-                
                 tabButtons[sender.tag].setTitleColor(titleTint, for: .normal)
                 tabButtons[sender.tag].backgroundColor = itemBackgroundColor
-                
-                
             }
             else if buttonImges.count > 0 {
                 for item in tabButtons {
@@ -207,16 +199,12 @@ import UIKit
         //and add button object depend the button number
         if buttonNumber > 0 {
             for i in  0...(buttonNumber - 1){
-                
                 let tempButton = UIButton.init(frame: CGRect.init(x: 0 , y: 0, width: 10 , height: 0))
-                
                 tempButton.contentEdgeInsets = UIEdgeInsets.init(top: 0, left: contentInsets, bottom: 0, right: contentInsets)
                 tempButton.titleLabel?.font = font
                 /// set titles of button in view
                 if buttonTitle.count > 0 {
-                    
                     if i < buttonTitle.count {
-                        
                         tempButton.setTitle( buttonTitle[i], for: .normal)
                     }
                     else{
@@ -237,10 +225,8 @@ import UIKit
                 tempButton.backgroundColor = .clear
                 tempButton.tag = i
                 tabButtons.append(tempButton)
-                // addSubview(tempButton)
                 stackViewContainer.addArrangedSubview(tempButton)
                 //need to add indicator
-                
             }
             // set action in all button
             initActionAndDelegete()
@@ -261,12 +247,9 @@ import UIKit
     }
     
     func setupButtonIndicator(sender : UIButton ){
-        
         //remove line indicator
         if tabButtons.count > 0 {
-            
             for item in tabButtons {
-                
                 for  subItem in  item.subviews{
                     if subItem.restorationIdentifier == "lineIndicate"{
                         subItem.removeFromSuperview()
@@ -275,9 +258,7 @@ import UIKit
                 //update button color
                 item.backgroundColor = .clear
                 item.setTitleColor(textColor, for: .normal)
-                
             }
-            
         }
         //add line indicator
         let lineIndicate = UILabel.init(frame: CGRect.init(x: (0 - spaceing / 2), y: sender.frame.height - lineHight , width: sender.frame.width + spaceing  , height: lineHight))
@@ -323,13 +304,3 @@ import UIKit
     }
 }
 
-//extension UIView {
-//    func shake() {
-//        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
-//        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
-//        animation.duration = 0.9
-//        animation.values = [-15.0, 15.0, -15.0, 15.0, -7.0, 7.0, -2.50, 2.50, 0.0 ]
-//        layer.add(animation, forKey: "shake")
-//    }
-//    
-//}

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol   TopTabBarDelegate {
+public protocol   TopTabBarDelegate {
 
     func topTabBarSelected (index : Int)
     

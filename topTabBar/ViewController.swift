@@ -32,7 +32,7 @@ class ViewController: UIViewController ,TopTabBarDelegate{
         thirdBar.buttonTitle = ["Dining","Shopping","Night Life","Health","Sport","Travel"]
         ToptabBarOutlet.delegte = self
 
-        thirdBar.buttonImges = [UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location")] as! [UIImage]
+      //  thirdBar.buttonImges = [UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location")] as! [UIImage]
     }
 
     override func didReceiveMemoryWarning() {

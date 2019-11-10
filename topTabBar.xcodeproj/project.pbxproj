@@ -18,8 +18,11 @@
 		81BB8C321F559FC1001F53B3 /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C311F559FC1001F53B3 /* Location.png */; };
 		81BB8C351F55A5BA001F53B3 /* house-h.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C331F55A5BA001F53B3 /* house-h.png */; };
 		81BB8C361F55A5BA001F53B3 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 81BB8C341F55A5BA001F53B3 /* house.png */; };
-		DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */; };
-		DF1E0E792371D078008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */; };
+		DF1E0E782371D078008A2FF7 /* ScreenShot2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E762371D077008A2FF7 /* ScreenShot2.png */; };
+		DF1E0E792371D078008A2FF7 /* ScreenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1E0E772371D077008A2FF7 /* ScreenShot1.png */; };
+		DF2875A52378140500BB7553 /* tabBarMovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = DF2875A42378140500BB7553 /* tabBarMovie.mov */; };
+		DF2875A72378144800BB7553 /* Screen Shot3.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2875A62378144700BB7553 /* Screen Shot3.png */; };
+		DF2875A92378151D00BB7553 /* IMG_3325.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF2875A82378151D00BB7553 /* IMG_3325.jpg */; };
 		DF649FE62376D386008EF633 /* TopTabBar-Chtar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DF649FE52376D386008EF633 /* TopTabBar-Chtar.podspec */; };
 		DFFAEB862338C6AC00D0EA08 /* TopTabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -38,8 +41,11 @@
 		81BB8C311F559FC1001F53B3 /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
 		81BB8C331F55A5BA001F53B3 /* house-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-h.png"; sourceTree = "<group>"; };
 		81BB8C341F55A5BA001F53B3 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
-		DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png"; sourceTree = "<group>"; };
-		DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-11-05 at 5.44.21 PM.png"; sourceTree = "<group>"; };
+		DF1E0E762371D077008A2FF7 /* ScreenShot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot2.png; sourceTree = "<group>"; };
+		DF1E0E772371D077008A2FF7 /* ScreenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot1.png; sourceTree = "<group>"; };
+		DF2875A42378140500BB7553 /* tabBarMovie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tabBarMovie.mov; sourceTree = "<group>"; };
+		DF2875A62378144700BB7553 /* Screen Shot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot3.png"; sourceTree = "<group>"; };
+		DF2875A82378151D00BB7553 /* IMG_3325.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3325.jpg; sourceTree = "<group>"; };
 		DF649FE52376D386008EF633 /* TopTabBar-Chtar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TopTabBar-Chtar.podspec"; sourceTree = "<group>"; };
 		DFFAEB852338C6AC00D0EA08 /* TopTabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,8 +64,11 @@
 		819560BC1F56C0A1005B59C3 /* screen shot */ = {
 			isa = PBXGroup;
 			children = (
-				DF1E0E772371D077008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png */,
-				DF1E0E762371D077008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png */,
+				DF2875A42378140500BB7553 /* tabBarMovie.mov */,
+				DF2875A82378151D00BB7553 /* IMG_3325.jpg */,
+				DF1E0E772371D077008A2FF7 /* ScreenShot1.png */,
+				DF2875A62378144700BB7553 /* Screen Shot3.png */,
+				DF1E0E762371D077008A2FF7 /* ScreenShot2.png */,
 				81BB8C331F55A5BA001F53B3 /* house-h.png */,
 				81BB8C341F55A5BA001F53B3 /* house.png */,
 				81BB8C311F559FC1001F53B3 /* Location.png */,
@@ -172,16 +181,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2875A92378151D00BB7553 /* IMG_3325.jpg in Resources */,
 				819702DF1F5318B1005927D9 /* LaunchScreen.storyboard in Resources */,
 				819702E81F5318EE005927D9 /* TopTabBar.xib in Resources */,
-				DF1E0E792371D078008A2FF7 /* Screen Shot 2019-11-05 at 5.44.21 PM.png in Resources */,
+				DF1E0E792371D078008A2FF7 /* ScreenShot1.png in Resources */,
+				DF2875A52378140500BB7553 /* tabBarMovie.mov in Resources */,
 				819702DC1F5318B1005927D9 /* Assets.xcassets in Resources */,
 				81BB8C321F559FC1001F53B3 /* Location.png in Resources */,
 				81BB8C361F55A5BA001F53B3 /* house.png in Resources */,
 				81BB8C351F55A5BA001F53B3 /* house-h.png in Resources */,
 				819560CB1F56C0BD005B59C3 /* Screen Shot 2017-08-30 at 11.43.25 AM.png in Resources */,
+				DF2875A72378144800BB7553 /* Screen Shot3.png in Resources */,
 				DF649FE62376D386008EF633 /* TopTabBar-Chtar.podspec in Resources */,
-				DF1E0E782371D078008A2FF7 /* Simulator Screen Shot - iPhone Xʀ - 2019-11-05 at 17.44.37.png in Resources */,
+				DF1E0E782371D078008A2FF7 /* ScreenShot2.png in Resources */,
 				819702DA1F5318B1005927D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
