@@ -33,44 +33,57 @@ import TopTabBar-Chtar
 # below what is every parameter in which change
 
 1- @IBInspectable var buttonNumber : Int 
+
    Represent number of button that bar will provide, you will also need to provide array of string that provide button title with same numbe. 
     
 2- @IBInspectable var barBackgroundColor : UIColor
+
    Represent bar background color.
    
 3- @IBInspectable var itemBackgroundColor : UIColor
+
     Represent button background color when it selected.
 
 4- @IBInspectable var textColor : UIColor 
+
     Represent text default color for buttons.
  
 5-  @IBInspectable var titleTint: UIColor
+
     Represent button title text color when it is selected.
     
 6-  @IBInspectable var spaceing : CGFloat 
+
     Reperesnt spacing between button inside stackview.
     
 7-  @IBInspectable var contentInsets : CGFloat 
+
     Represent spacing before and after button title text.
     
 8-  @IBInspectable var lineColor : UIColor 
+
     Represent line bar background color.
     
 9-  @IBInspectable var lineHight : CGFloat 
+
     Reperesnt line hight.
     
 10- @IBInspectable var indecatorColor : UIColor
+
     Represent background color of line that indicate selected item in bar.
     
 11- you can also access stackView that contain items from code and modify aligned of item, as your business need.
 
 12- Can you also make bar working with images only by provide, to array for default image and selected image.
 for code 
+
 Hint :- still beta under development, but you can try it.
 
 # to get slected index
 you have conform delegate -->
-```TopTabBarDelegate
+```
+TopTabBarDelegate
+
 ```
 and set tabBar outlet with it
 
@@ -92,5 +105,10 @@ this delegate contain :
 
  
  
+## Author
 
+* **Ragaie alfy Fahmey**  - [ragaie](https://github.com/ragaie)
+
+## You can find me in linked in 
+- [Ragaie alfy](www.linkedin.com/in/ragaie-alfy)
 
