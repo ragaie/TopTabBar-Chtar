@@ -24,13 +24,15 @@ class ViewController: UIViewController ,TopTabBarDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         
        ToptabBarOutlet.buttonTitle = ["home","info","gallary gdfmdnfjs  dkgkd","menu"]
-        ToptabBarOutlet.font = UIFont.boldSystemFont(ofSize: 16)
-        secandTabBar.font = UIFont.boldSystemFont(ofSize: 16)
+       // ToptabBarOutlet.font = UIFont.boldSystemFont(ofSize: 16)
+       // secandTabBar.font = UIFont.boldSystemFont(ofSize: 16)
         secandTabBar.buttonTitle = ["Dining","Shopping","Night Life","Health","Sport","Travel"]
         
-        thirdBar.font = UIFont.boldSystemFont(ofSize: 16)
+        thirdBar.font = UIFont.systemFont(ofSize: 14)
+        thirdBar.selectedFont = UIFont.boldSystemFont(ofSize: 16)
+
         thirdBar.buttonTitle = ["Dining","Shopping","Night Life","Health","Sport","Travel"]
-        ToptabBarOutlet.delegte = self
+        ToptabBarOutlet.delegate = self
 
       //  thirdBar.buttonImges = [UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location"),UIImage.init(named: "Location")] as! [UIImage]
     }

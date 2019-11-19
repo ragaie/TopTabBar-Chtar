@@ -20,8 +20,9 @@ import UIKit
     open var buttonImges : [UIImage]! = []
     open var buttonImgesHighLight : [UIImage]! = []
     
-    open  var delegte : TopTabBarDelegate?
+    open  var delegate : TopTabBarDelegate?
     open var font : UIFont = UIFont.systemFont(ofSize: 12)
+    open var selectedFont : UIFont = UIFont.boldSystemFont(ofSize: 14)
 
 
     //MARK: Initializers
@@ -154,22 +155,24 @@ import UIKit
     // this action in button
     @objc func showSelection(_ sender : UIButton)  {
         
-        if delegte != nil {
-            delegte?.topTabBarSelected(index: sender.tag)
+        if delegate != nil {
+            delegate?.topTabBarSelected(index: sender.tag)
         }
         
-        setupButtonIndicator(sender: sender)
         /// hightLight button that selected
         /// change title color
         //change background color
+        //change font
         if tabButtons.count > 0 {
             if buttonTitle.count > 0 {
                 for item in tabButtons {
                     item.setTitleColor(textColor, for: .normal)
                     item.backgroundColor = .clear
+                    item.titleLabel?.font = font
                 }
                 tabButtons[sender.tag].setTitleColor(titleTint, for: .normal)
                 tabButtons[sender.tag].backgroundColor = itemBackgroundColor
+                tabButtons[sender.tag].titleLabel?.font = selectedFont
             }
             else if buttonImges.count > 0 {
                 for item in tabButtons {
@@ -182,6 +185,10 @@ import UIKit
                 }
             }
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.001, execute: {
+            self.setupButtonIndicator(sender: sender)
+        })
+
         selectIndex = sender.tag
         
     }
@@ -233,6 +240,7 @@ import UIKit
             // hightlight first button
             tabButtons[0].setTitleColor(titleTint, for: .normal)
             tabButtons[0].backgroundColor = itemBackgroundColor
+            tabButtons[0].titleLabel?.font = selectedFont
             if buttonImgesHighLight.count > 0 && buttonImges.count > 0 {
                 tabButtons[0].setImage(buttonImgesHighLight[0], for: .normal)
                 
@@ -260,6 +268,7 @@ import UIKit
                 item.setTitleColor(textColor, for: .normal)
             }
         }
+        
         //add line indicator
         let lineIndicate = UILabel.init(frame: CGRect.init(x: (0 - spaceing / 2), y: sender.frame.height - lineHight , width: sender.frame.width + spaceing  , height: lineHight))
         lineIndicate.backgroundColor = indecatorColor
