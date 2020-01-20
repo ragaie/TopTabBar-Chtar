@@ -12,19 +12,15 @@ import UIKit
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet open weak var stackViewContainer: UIStackView!
     @IBOutlet weak var linebar: UILabel!
-    
     private var lineIndecator : UILabel!
     private var tabButtons : [UIButton]! = []
-    private var selectIndex : Int! = 0
+    open var selectIndex : Int! = 0
     open var buttonTitle : [String]! = []
     open var buttonImges : [UIImage]! = []
     open var buttonImgesHighLight : [UIImage]! = []
-    
-    open  var delegate : TopTabBarDelegate?
+    var delegate : TopTabBarDelegate?
     open var font : UIFont = UIFont.systemFont(ofSize: 12)
     open var selectedFont : UIFont = UIFont.boldSystemFont(ofSize: 14)
-
-
     //MARK: Initializers
     //MARK: tabbar parameter
     @IBInspectable var buttonNumber : Int = 0 {
@@ -34,7 +30,6 @@ import UIKit
             }
             stackViewContainer.distribution = .fill
         }
-        
     }
     
     @IBInspectable var barBackgroundColor : UIColor = UIColor.blue {
@@ -68,12 +63,13 @@ import UIKit
             self.setNeedsDisplay()
         }
     }
+    
     @IBInspectable var contentInsets : CGFloat = 10 {
         didSet{
             changelayOut()
-            
         }
     }
+    
     //MARK: line parameter
     @IBInspectable var lineColor : UIColor = UIColor.lightGray {
         didSet{
@@ -97,14 +93,12 @@ import UIKit
     override public init(frame : CGRect) {
         super.init(frame : frame)
         initSubviews()
-        
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initSubviews()
         initActionAndDelegete()
-        
     }
     
     override open func layoutSubviews() {
@@ -117,7 +111,6 @@ import UIKit
                 self.setupButtonIndicator(sender: self.tabButtons[0])
             }
         }
-        
     }
     
     public func initSubviews() {
@@ -142,23 +135,21 @@ import UIKit
     
     //func to select spescif index
     func selectitemAt(index : Int){
-        
         if index >= 0 && index < tabButtons.count{
             setupButtonIndicator(sender: tabButtons[index])
             scrollView.scrollRectToVisible(tabButtons![index].frame, animated: true)
             selectIndex = index
+            if delegate != nil {
+                delegate?.topTabBarSelected(index: index)
+            }
         }
         else{
             assertionFailure("select item should be in range")
         }
     }
+    
     // this action in button
     @objc func showSelection(_ sender : UIButton)  {
-        
-        if delegate != nil {
-            delegate?.topTabBarSelected(index: sender.tag)
-        }
-        
         /// hightLight button that selected
         /// change title color
         //change background color
@@ -188,9 +179,10 @@ import UIKit
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.001, execute: {
             self.setupButtonIndicator(sender: sender)
         })
-
         selectIndex = sender.tag
-        
+        if delegate != nil {
+            delegate?.topTabBarSelected(index: sender.tag)
+        }
     }
     
     func setButtons(){
