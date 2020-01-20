@@ -18,12 +18,12 @@ import UIKit
     open var buttonTitle : [String]! = []
     open var buttonImges : [UIImage]! = []
     open var buttonImgesHighLight : [UIImage]! = []
-    var delegate : TopTabBarDelegate?
+    open var delegate : TopTabBarDelegate?
     open var font : UIFont = UIFont.systemFont(ofSize: 12)
     open var selectedFont : UIFont = UIFont.boldSystemFont(ofSize: 14)
     //MARK: Initializers
     //MARK: tabbar parameter
-    @IBInspectable var buttonNumber : Int = 0 {
+    @IBInspectable open var buttonNumber : Int = 0 {
         didSet{
             if buttonNumber > 0 {
                 changelayOut()
@@ -134,7 +134,7 @@ import UIKit
     }
     
     //func to select spescif index
-    func selectitemAt(index : Int){
+   public func selectitemAt(index : Int){
         if index >= 0 && index < tabButtons.count{
             setupButtonIndicator(sender: tabButtons[index])
             scrollView.scrollRectToVisible(tabButtons![index].frame, animated: true)
