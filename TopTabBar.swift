@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable open class TopTabBar: UIView {
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet public weak var scrollView: UIScrollView!
     @IBOutlet open weak var stackViewContainer: UIStackView!
     @IBOutlet weak var linebar: UILabel!
     private var lineIndecator : UILabel!
@@ -147,7 +147,15 @@ import UIKit
             assertionFailure("select item should be in range")
         }
     }
-    
+    public func scrollToitemAt(index : Int){
+         if index >= 0 && index < tabButtons.count{
+            setupButtonIndicator(sender: tabButtons[index])
+             scrollView.scrollRectToVisible(tabButtons![index].frame, animated: true)
+         }
+         else{
+             assertionFailure("scroll falied")
+         }
+     }
     // this action in button
     @objc func showSelection(_ sender : UIButton)  {
         /// hightLight button that selected
@@ -237,7 +245,18 @@ import UIKit
                 tabButtons[0].setImage(buttonImgesHighLight[0], for: .normal)
                 
             }
-            
+            //check arabic layout
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                
+                let userdef = UserDefaults.standard
+                let langArray = userdef.object(forKey: "AppleLanguages") as! NSArray
+                let current = langArray.firstObject as! String
+                
+                if current.contains("ar"){
+                    self.scrollView.scrollRectToVisible(self.tabButtons![0].frame, animated: true)
+                    
+                }
+            }
         }
     }
     

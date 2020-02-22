@@ -43,7 +43,18 @@ class ViewController: UIViewController ,TopTabBarDelegate{
     }
 
     @IBAction func selectindex(_ sender: Any) {
-        ToptabBarOutlet.selectitemAt(index: 2)
+       // ToptabBarOutlet.selectitemAt(index: 2)
+        var phone : String? = "+420733454524"
+        guard let url = URL(string: "tel://\(phone ?? "")") else {
+        return //be safe
+        }
+
+        if #available(iOS 10.0, *) {
+        UIApplication.shared.open(url)
+        } else {
+        UIApplication.shared.openURL(url)
+        }
+
     }
     
 }
